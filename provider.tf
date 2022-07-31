@@ -18,3 +18,7 @@ provider "google" {
  access_token	= data.google_service_account_access_token.default.access_token
  request_timeout 	= "60s"
 }
+
+locals {
+ terraform_service_account = "YOUR_SERVICE_ACCOUNT@YOUR_PROJECT.iam.gserviceaccount.com"
+}
