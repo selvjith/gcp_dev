@@ -7,11 +7,6 @@ terraform {
   }
 }
 
-resource "google_service_account" "default" {
-  account_id   = "terraform@qwiklabs-gcp-01-d068ec587483.iam.gserviceaccount.com"
-  display_name = "Service Account"
-}
-
 resource "google_compute_instance" "default" {
   name         = "terraform_test"
   machine_type = "f1-micro"
