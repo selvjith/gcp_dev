@@ -8,7 +8,7 @@ terraform {
 }
 
 resource "google_service_account" "default" {
-  account_id   = 112762815787091775853
+  account_id   = "terraform@qwiklabs-gcp-01-d068ec587483.iam.gserviceaccount.com"
   display_name = "Service Account"
 }
 
