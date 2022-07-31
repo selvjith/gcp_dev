@@ -14,11 +14,11 @@ data "google_service_account_access_token" "default" {
 }
 
 provider "google" {
- project 		= qwiklabs-gcp-01-d068ec587483
+ project 		= "qwiklabs-gcp-01-d068ec587483"
  access_token	= data.google_service_account_access_token.default.access_token
  request_timeout 	= "60s"
 }
 
 locals {
- terraform_service_account = "YOUR_SERVICE_ACCOUNT@YOUR_PROJECT.iam.gserviceaccount.com"
+ terraform_service_account = "terraform@qwiklabs-gcp-01-d068ec587483.iam.gserviceaccount.com"
 }
